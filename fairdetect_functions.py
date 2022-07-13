@@ -246,7 +246,7 @@ def understand_shap(X_test,y_test,model,labels,sensitive,affected_group,affected
     misclass = full_table[full_table.t != full_table.p]
     affected_class = misclass[(misclass[sensitive] == affected_group) & (misclass.p == affected_target)]
 
-    truclass = full_table[full_table.t == full_table.p]
+   
     tru_class = truclass[(truclass[sensitive] == affected_group) & (truclass.t == affected_target)]
 
     x_axis = list(affected_class.drop(['t','p',sensitive],axis=1).columns)
