@@ -20,22 +20,6 @@ class FairDetect:
         return "Hello"
     
 
-
-    # asking user for the target column and check  if it is binary or not 
-    '''
-    def check_binary_target(self,data,target_column_name):
-      if not(set(data[target_column_name].unique())==set([0,1])):
-        return False 
-      return True
-
-    def ask_check_for_target(self,data):
-      print(data.columns.values)
-      target_column_name=input("Please Enter the name of the target column from the given column names: " )
-      return self.check_binary_target(data,target_column_name)
-    '''
-
-
-
     #change 1
     def create_labels(self,sensitive):
         sensitive_label = {}
